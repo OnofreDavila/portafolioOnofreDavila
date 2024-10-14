@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CDN:_GOOGLE_FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio Onofre Davila</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+     <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ONOFRE DAVILA</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#curriculum">CV</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+     </div>
+     <!-- SECCION INICIO-->
+     <section id="inicio" class="inicio">
+        <div class="contenido-inicio">
+            <div class="contenedor-img">
+                <img src="/img/foto_perfil.jpg" alt="">
+            </div>
+            <h1>ONOFRE DAVILA</h1>
+            <h2>Desarrollador Frontend</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/onofredavila"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/OnofreDavila"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/ono.dak/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#contacto"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+     </section>
+     <!-- SECCION SOBRE MI-->
+      <section id="sobremi" class="sobremi">
+        <div class="coontenido-seccion">
+            
+        
+            <div class="fila">
+                <!-- datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Telefono</strong>
+                            +569 37 25 8761
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            onofrej14@gmail.com
+                        </li>
+                        <li>
+                            <strong>Titulo</strong>
+                            Ingeniero de Producción.
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Chile, Santiago.
+                        </li>
+                        <li>
+                            <strong>Freelance</strong>
+                            Disponible.
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses-->
+                <div class="col">
+                    
+                    <div class="contenedor-intereses">
+                        <h2>Sobre Mí</h2>
+                        <p><span>Hola, soy Onofre Davila.</span> Me apasiona resolver problemas complejos a través de 
+                            soluciones tecnológicas eficientes, siempre con un enfoque en la mejora continua. 
+                            Disfruto creando interfaces eficientes y fáciles de usar, asegurando una experiencia de 
+                            usuario atractiva y fluida. Me encanta aprender nuevas tecnologías para mantenerme actualizado.<br>
+                            Además, cuento con un plus: me apasiona la ilustración digital. 
+                            Esto me permite no solo enfocarme en el desarrollo, sino también aportar valor visual a 
+                            los proyectos mediante ilustraciones y diseños creativos, ideales para complementar interfaces y 
+                            diseños web de forma única.</p>
+                    </div>
+                </div>
+            </div>
+            <button onclick="descargaCV()">
+                Dercargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+      </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <p>Sigo aprendiendo sobre programación todos los días, 
+                y actualmente me estoy enfocando en profundizar mis 
+                conocimientos en el framework React JS y perfeccionando 
+                mis habilidades en JavaScript, ya que me siento muy cómodo 
+                trabajando con estos lenguajes.</p>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <div class="skill">
+                        <span>HTML y CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Kotlin</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Diseño UI/UX</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SAP MM</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Vue JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ASP.NET</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Docker</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GIT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Linux</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MongoDB</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PowerBI</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Procreate</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION RESUMEN -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>RESUMEN</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Resumen</h3>
+                    <div class="item izq">
+                        <p>Soy Front End Developer y estudiante de Técnico Analista Programador, 
+                            con un background en Ingeniería de Producción y más de 5 años de experiencia en esta área.
+                             Actualmente, estoy enfocado en tecnologías Front End y desarrollo de software, 
+                             construyendo interfaces centradas en el usuario. Me apasiona la creación de aplicaciones, 
+                             con un enfoque en la usabilidad y la interacción con los usuarios.<br>
+
+                            Además, tengo experiencia en Procreate y me apasiona la ilustración. 
+                            Ofrezco ilustraciones creativas y atractivas para diversos mercados, 
+                            incluyendo paquetes personalizados para marcas, diseños únicos y logotipos para proyectos web. 
+                            Me especializo en crear imágenes que destacan y aportan valor visual, 
+                            adaptadas a las necesidades específicas de cada cliente.</p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item izq">
+                        <h4>Operador de sistema</h4>
+                        <span class="casa">Corteva</span>
+                        <span class="fecha">03/2024 - 09/2024</span>
+                        <p>Transaciones SAP, guias de despachos de exportación,
+                            operaciones de despacho, kpi y sistema de control de inspeccion e inventarios 
+                            mediante AppSheet, Excel, PowerBI.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Educación</h3>
+                    <div class="item der">
+                        <h4>Tecnico Analista Programador</h4>
+                        <span class="casa">Instituto Profesional Latinoamericano de comercio exterior - Iplacex</span>
+                        <span class="fecha">2023 - 2025 (actualmente)</span>
+                        <p> El analista programador tiene la capacidad de desarrollar e implementar 
+                            soluciones informáticas en ambientes de producción automatizados, 
+                            utilizando diversas herramientas tecnológicas de desarrollo de software 
+                            y comunicación multiplataforma mediante servicios web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Ingeniería de Producción</h4>
+                        <span class="casa">Universidad Centroccidental Lisandro Alvarado (UCLA)</span>
+                        <span class="fecha">2008 - 2016</span>
+                        <p>La ingeniería de producción es una rama de la ingeniería, que se define como aquella que se centra en los procedimientos relacionados a la manufactura y fabricación de materiales o productos industriales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <p>"Mi portafolio está compuesto por una serie de proyectos personales que he desarrollado durante mi formación como desarrollador front-end.
+                 Cada uno de estos proyectos refleja mi crecimiento y las habilidades que he adquirido. Continuamente agregaré nuevos proyectos, y
+                  espero que encuentres interesante y útil el trabajo que presento."
+            </p>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/img/proyectoVueJs.PNG" alt="">
+                    <div class="overlay">
+                        <h3>FrontEnd</h3>
+                        <p>Vue JS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/practicaVueJS">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://onofredavilavuejstrabajofinal.netlify.app/">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/proyectoCitas.PNG" alt="">
+                    <div class="overlay">
+                        <h3>FrontEnd</h3>
+                        <p>Javascript HTML CSS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/AdministradorCitas">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://administradordecitaconjs.netlify.app/">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/proyectoGastosSemanales.PNG" alt="">
+                    <div class="overlay">
+                        <h3>FrontEnd</h3>
+                        <p>Javascript HTML CSS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/CalcularGastos">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://gastossemanalesconjs.netlify.app/">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/proyectoCotizadorSeguros.PNG" alt="">
+                    <div class="overlay">
+                        <h3>FrontEnd</h3>
+                        <p>Javascript HTML CSS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/CotizadorSeguro">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://proyectocotizadordesegurosconprototyp.netlify.app/">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/proyectoCarritoJS.PNG" alt="">
+                    <div class="overlay">
+                        <h3>FrontEnd</h3>
+                        <p>Javascript HTML CSS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/CarritoDeCompra">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://carritodecompraconlocalstorage.netlify.app/#">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/proyectoNotas.PNG" alt="">
+                    <div class="overlay">
+                        <h3>FrontEnd</h3>
+                        <p>Javascript HTML CSS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/Notas">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://proyectolocalstoragelistadetweet.netlify.app/">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/proyectoBuscadorJS.PNG" alt="">
+                    <div class="overlay">
+                        <h3>FrontEnd</h3>
+                        <p>Javascript HTML CSS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/BuscadorJavascript">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://onofredavila.github.io/BuscadorJavascript/">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/proyectoValidacionFormularioJS.PNG" alt="">
+                    <div class="overlay">
+                        <h3>FrontEnd</h3>
+                        <p>Javascript HTML CSS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/ValidacionFormularioEmail">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://proyectoenviodeemail.netlify.app/">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/proyectoMockupFestivalMusica.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Mockup</h3>
+                        <p>HTML CSS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/FestivalDeMusica">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://onofredavila.github.io/FestivalDeMusica/">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/proyectoMockupTiendaRopa.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Mockup</h3>
+                        <p>HTML CSS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/FrontEndStore">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://store-front-end-davila-onofre.netlify.app/">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/proyectoMockupPaginaCafe.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Mockup</h3>
+                        <p>HTML CSS</p>
+                        <div class="enlaces">
+                            <a href="https://github.com/OnofreDavila/BlogDeCafe">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                            <a href="https://mockupcafe.netlify.app/">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="formulario" action="https://formsubmit.co/b886bfef15f6e74884a5acde3fa9a97c" method="POST">
+                        <input type="text" placeholder="Tú Nombre" name="name" requerid>
+                        <input type="number" placeholder="Número telefónico" name="telefono" requerid>
+                        <input type="email" placeholder="Dirección de correo" name="email" requerid>
+                        <input type="text" placeholder="Tema" name="tema" requerid>
+                        <textarea cols="30" rows="10" placeholder="Mensaje"  name="message" requerid></textarea>
+                        <button type="submit" value="enviar">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                        <input type="hidden" name="text" value="http://localhost:5500">
+                        <input type="hidden" name="_captcha" value="false">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/onofredavila"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/OnofreDavila"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/ono.dak/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#contacto"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="/js/app.js"></script>
+</body>
+</html>
