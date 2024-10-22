@@ -7,6 +7,15 @@
 }
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;/* parte que nos permite que  1 rem sean 10 px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem; /* parte que nos permite que  1 rem sean 10 px */
+    line-height: 1.5;
 }
 /* MENU */
 .contenedor-header {
@@ -183,7 +192,8 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #1CB698; 
+    /* #1cb698*/
     z-index: -1;
     transition: 1s;
 }
@@ -198,7 +208,7 @@ html {
 }
 .skills .contenido-seccion{
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 }
 .skills h2{
     font-size: 48px;
@@ -207,204 +217,50 @@ html {
     padding: 20px 0;
 
 }
-.skills .fila{
-    display: flex;
-}
-.skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
-}
 .skills p{
-    font: 18px;
+    font: 20x;
     line-height: 22px;
     margin: 10px 25px 20px 25px;
     font-family: 'Work sans';
     text-align: center;
 }
-.skills .skill > span{
-    font-weight: bold;
+.skills .skills-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+}
+@media (min-width: 768px) {
+    .skills .skills-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.skills .skill {
+    background-color: #b5e4da85;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20%;
+    max-width: 80%;
+    align-items: center;
+    justify-items: center;
+}
+.skills .skill:hover{
+    background-color: #1CB698;
+}
+.skills .skill h3{
+    font-family: 'Work sans';
+    font-size: 20px;
     display: block;
     margin-bottom: 10px;
-}
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
-}
-.skills .skill .progreso{
-    background-color: #1CB698;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #1CB698;
-    border-radius: 50px;
-    line-height: 40px;
     text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
+}
+.skills .skill img{
+    max-width: 50%;
+    align-items: center;
+    height: auto;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
 
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-
-.skills .skill .cmas{
-    width: 0%;
-    animation: 2s cmas forwards;
-}
-@keyframes cmas {
-    0%{width: 0%;}
-    100%{width: 30%;}
-}
-
-.skills .skill .python{
-    width: 0%;
-    animation: 2s python forwards;
-}
-@keyframes python {
-    0%{width: 0%;}
-    100%{width: 35%;}
-}
-
-.skills .skill .kotlin{
-    width: 0%;
-    animation: 2s kotlin forwards;
-}
-@keyframes kotlin {
-    0%{width: 0%;}
-    100%{width: 30%;}
-}
-
-.skills .skill .uiux{
-    width: 0%;
-    animation: 2s uiux forwards;
-}
-@keyframes uiux {
-    0%{width: 0%;}
-    100%{width: 45%;}
-}
-
-.skills .skill .sql{
-    width: 0%;
-    animation: 2s sql forwards;
-}
-@keyframes sql {
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-
-.skills .skill .excel{
-    width: 0%;
-    animation: 2s excel forwards;
-}
-@keyframes excel {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-.skills .skill .sap{
-    width: 0%;
-    animation: 2s sap forwards;
-}
-@keyframes sap {
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-.skills .skill .react{
-    width: 0%;
-    animation: 2s react forwards;
-}
-@keyframes react {
-    0%{width: 0%;}
-    100%{width: 25%;}
-}
-
-.skills .skill .vuejs{
-    width: 0%;
-    animation: 2s vuejs forwards;
-}
-@keyframes vuejs {
-    0%{width: 0%;}
-    100%{width: 35%;}
-}
-.skills .skill .aspnet{
-    width: 0%;
-    animation: 2s aspnet forwards;
-}
-@keyframes aspnet {
-    0%{width: 0%;}
-    100%{width: 35%;}
-}
-.skills .skill .docker{
-    width: 0%;
-    animation: 2s docker forwards;
-}
-@keyframes docker {
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-.skills .skill .git{
-    width: 0%;
-    animation: 2s git forwards;
-}
-@keyframes git {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-.skills .skill .linux{
-    width: 0%;
-    animation: 2s linux forwards;
-}
-@keyframes  linux{
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-.skills .skill .mongodb{
-    width: 0%;
-    animation: 2s mongodb forwards;
-}
-@keyframes  mongodb{
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-.skills .skill .powerbi{
-    width: 0%;
-    animation: 2s powerbi forwards;
-}
-@keyframes  powerbi{
-    0%{width: 0%;}
-    100%{width: 60%;}
-}
-.skills .skill .procreate{
-    width: 0%;
-    animation: 2s procreate forwards;
-}
-@keyframes  procreate{
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
 /* SECCION CURRICULUM */
 .curriculum{
     background-color: #1e2326;
@@ -722,17 +578,6 @@ footer .arriba{
     .sobremi .fila .col{
         width: fit-content;
     }
-
-    .skills .fila{
-        display: block;
-    }
-    .skills .fila .col{
-        width: 100%;
-    }
-    .skills .fila .col .barra-skill{
-        width: 100%;
-    }
-
     .curriculum .fila{
         display: block;
     }
