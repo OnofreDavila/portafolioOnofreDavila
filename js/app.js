@@ -62,7 +62,10 @@ function efectoHabilidades(){
     }
 }
 function descargaCV() {
-    window.location.href = 'https://drive.google.com/uc?export=download&id=16TUYOaij8GCWG8Ybxs-1oMrMtWEWBnf7';
+    window.location.href = 'https://drive.google.com/uc?export=download&id=1ba9c4bTCF9CmVZoSuAdJQSDc1AExWK4L';
+    //https://drive.google.com/file/d//view?usp=sharing
+    //1ba9c4bTCF9CmVZoSuAdJQSDc1AExWK4L
+    //https://drive.google.com/uc?export=download&id=16TUYOaij8GCWG8Ybxs-1oMrMtWEWBnf7
 }
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
