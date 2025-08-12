@@ -74,7 +74,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 100vh; /* para que ocupe toda la altura de la pantalla */
+    min-height: 100vh;
 }
 .inicio img {
   max-width: 100%;
