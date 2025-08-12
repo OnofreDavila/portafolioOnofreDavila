@@ -21,7 +21,7 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobremi">Sobre mí</a></li>
+                    <!-- <li><a href="#sobremi">Sobre mí</a></li> -->
                     <!-- <li><a href="#skills">Habilidades</a></li> -->
                     <li><a href="#curriculum">CV</a></li>
                     <li><a href="#portfolio">Portafolio</a></li>
@@ -35,58 +35,26 @@
      </div>
      <!-- SECCION INICIO-->
      <section id="inicio" class="inicio">
-        <div class="contenido-inicio">
-            <div class="contenedor-img">
-                <img src="/img/foto_perfil.jpg" alt="">
-            </div>
-            <h1>ONOFRE DAVILA</h1>
-            <h2>Desarrollador Frontend</h2>
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/onofredavila"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/OnofreDavila"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/ono.dak/"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#contacto"><i class="fa-regular fa-envelope"></i></a>
-            </div>
-        </div>
-     </section>
-     <!-- SECCION SOBRE MI-->
-      <section id="sobremi" class="sobremi">
-        <div class="coontenido-seccion">
-            
-        
-            <div class="fila">
-                <!-- datos personales-->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Telefono</strong>
-                            +569 37 25 8761
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            onofrej14@gmail.com
-                        </li>
-                        <li>
-                            <strong>Titulo</strong>
-                            Ingeniero de Producción.
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                            Chile, Santiago.
-                        </li>
-                        <li>
-                            <strong>Freelance</strong>
-                            Disponible.
-                        </li>
-                    </ul>
+        <div class="fila">
+            <div class="col">
+                <div class="contenido-inicio">
+                        <div class="contenedor-img">
+                            <img src="/img/foto_perfil.jpg" alt="">
+                        </div>
+                        <h1>ONOFRE DAVILA</h1>
+                        <h2>Desarrollador Frontend</h2>
+                        <div class="redes">
+                            <a href="https://www.linkedin.com/in/onofredavila"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/OnofreDavila"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/ono.dak/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#contacto"><i class="fa-regular fa-envelope"></i></a>
+                        </div>        
                 </div>
-                <!-- intereses-->
-                <div class="col">
-                    
-                    <div class="contenedor-intereses">
-                        <h2>Sobre Mí</h2>
-                        <p><span>Hola, soy Onofre Davila.</span> Me apasiona resolver problemas complejos a través de 
+            </div>
+            <div class="col">
+                <div class="contenedor-intereses">
+                    <h2>Sobre Mí</h2>
+                    <p><span>Hola, soy Onofre Davila.</span> Me apasiona resolver problemas complejos a través de 
                             soluciones tecnológicas eficientes, siempre con un enfoque en la mejora continua. 
                             Disfruto creando interfaces eficientes y fáciles de usar, asegurando una experiencia de 
                             usuario atractiva y fluida. Me encanta aprender nuevas tecnologías para mantenerme actualizado.<br>
@@ -94,15 +62,49 @@
                             Esto me permite no solo enfocarme en el desarrollo, sino también aportar valor visual a 
                             los proyectos mediante ilustraciones y diseños creativos, ideales para complementar interfaces y 
                             diseños web de forma única.</p>
+                </div>
+
+                <div class="contenido-seccion">            
+                    <div class="fila">
+                        <!-- datos personales-->
+                        <div class="col">
+                            <h3>Datos Personales</h3>
+                            <ul>
+                                <li>
+                                    <strong>Telefono</strong>
+                                    +569 37 25 8761
+                                </li>
+                                <li>
+                                    <strong>Email</strong>
+                                    onofrej14@gmail.com
+                                </li>
+                                <li>
+                                    <strong>Titulo</strong>
+                                    Ingeniero de Producción.
+                                </li>
+                                <li>
+                                    <strong>Dirección</strong>
+                                    Chile, Santiago.
+                                </li>
+                                <li>
+                                    <strong>Freelance</strong>
+                                    Disponible.
+                                </li>
+                            </ul>
+                        </div>                
                     </div>
+                    <button onclick="descargaCV()">
+                        Dercargar CV <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
                 </div>
             </div>
-            <button onclick="descargaCV()">
-                Dercargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
         </div>
-      </section>
+     </section>
+     <!-- SECCION SOBRE MI-->
+      <!-- <section id="sobremi" class="sobremi">
+        
+      </section> -->
     <!-- SECCION RESUMEN -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
@@ -111,7 +113,7 @@
                 <div class="col izquierda">
                     <h3>Resumen</h3>
                     <div class="item izq">
-                        <p>Soy Front End Developer y estudiante de Técnico Analista Programador, 
+                        <p>Soy Técnico Analista Programador, 
                             con un background en Ingeniería de Producción y más de 5 años de experiencia en esta área.
                              Actualmente, estoy enfocado en tecnologías Front End y desarrollo de software, 
                              construyendo interfaces centradas en el usuario. Me apasiona la creación de aplicaciones, 
@@ -146,7 +148,7 @@
                     <div class="item der">
                         <h4>Tecnico Analista Programador</h4>
                         <span class="casa">Instituto Profesional Latinoamericano de comercio exterior - Iplacex</span>
-                        <span class="fecha">2023 - 2025 (actualmente)</span>
+                        <span class="fecha">2023 - 2025</span>
                         <p> El analista programador tiene la capacidad de desarrollar e implementar 
                             soluciones informáticas en ambientes de producción automatizados, 
                             utilizando diversas herramientas tecnológicas de desarrollo de software 
